@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: sans-serif;
+        }
+        .gif{
+           min-height: 100vh;
+          width: 100%;
+         background-color:#000;
+         background-image: url("https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 70%;
+         
+         color: #fff;
+        }
+        .logo{
+            width: 160px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        .gif nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 15px 35px;
+        }
+         .gif nav ul li a{
+            text-decoration: none;
+            color: #fff;
+         }
+         .gif h1{
+            margin-right: 10px;
+            font-size: 75px;
+            margin-top: 13%;
+         }
+         .gif button{
+            background-color:rgb(57, 54, 54);
+            padding: 14px 25px ;
+            outline: none;
+            border: 0;
+            font-size: 35px;
+            color: #fff;
+            letter-spacing: 4px;
+            margin-top: 35px;
+            cursor: pointer;
+         }
+         .indicator span{
+            display: inline-block;
+            background: #3a3a3a; 
+            width: 17px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 10px; 
+         }
+         .indicator{
+            margin-top: 150px;
+         }
+         .indicator span.active{
+            background: #fff;
+         }
+         .cta p{
+            font-size: 35px;
+         }
+         .cta{
+            position:absolute;
+            right: 10px;
+            bottom: 50px;
+         }
+    </style>
+</head>
+<body>
+   <div class="gif">
+        <nav>
+        <img src="planetX-logo.png" alt=""class="logo">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Planet</a></li>
+            <li><a href="">Back</a></li>
+        </ul>
+    </nav>
+    <h1>The Magical <br> Planet</h1>
+    <button type="button">Explore the Planet</button>
+    <div class="indicator">
+    <span></span>
+    <span></span>
+    <span class="active"></span>
+   </div>
+   <div class="cta">
+    <p>You can explore more about the planet mars <br> and another planets as well</p>
+    <button type="button">Check now &#8647; </button>
+   </div>
+   
+   </div>
+   
+</body>
+</html>
